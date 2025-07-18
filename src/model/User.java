@@ -38,11 +38,10 @@ public class User {
     }
 
     @Override
-public String toString() {
-    return "User Details:\n" +
-           "User ID   : " + userId + "\n" +
-           "Name      : " + name + "\n" +
-           "Phone No. : " + phNo;
-}
-
+    public String toString() {
+        return "User Details:\n" +
+            "User ID   : " + userId + "\n" +
+            "Name      : " + name + "\n" +
+            "Phone No. : " + phNo;
+    }
 }

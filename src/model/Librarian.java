@@ -6,8 +6,10 @@ public class Librarian {
     private String username;
     private String password;
 
+    //default constructor
     public Librarian() {}
 
+    //parameterised constructor
     public Librarian(int librarianId, String name, String username, String password) {
         this.librarianId=librarianId;
         this.name=name;

@@ -27,7 +27,7 @@ public class Book{
     }
 
     public void setBookId(int bookId) {
-        this.bookId = bookId;
+        this.bookId=bookId;
     }
 
     public String getTitle() {
@@ -35,7 +35,7 @@ public class Book{
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title=title;
     }
 
     public String getAuthor() {
@@ -43,7 +43,7 @@ public class Book{
     }
 
     public void setAuthor(String author) {
-        this.author = author;
+        this.author=author;
     }
 
     public String getStatus() {
@@ -51,7 +51,7 @@ public class Book{
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        this.status=status;
     }
 
     public int getCopiesTotal() {
@@ -59,7 +59,7 @@ public class Book{
     }
 
     public void setCopiesTotal(int copiesTotal) {
-        this.copiesTotal = copiesTotal;
+        this.copiesTotal=copiesTotal;
     }
 
     public int getCopiesAvailable() {
@@ -67,7 +67,7 @@ public class Book{
     }
 
     public void setCopiesAvailable(int copiesAvailable) {
-        this.copiesAvailable = copiesAvailable;
+        this.copiesAvailable=copiesAvailable;
     }
 
    @Override
