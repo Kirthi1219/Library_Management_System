@@ -11,7 +11,7 @@ public class BorrowRecord {
     private LocalDate returnDate;
     private boolean renewed;
     private double fineIncurred;
-    private String returnStatus; 
+    private boolean returnStatus; 
 
     public BorrowRecord() {}
 
@@ -94,11 +94,11 @@ public class BorrowRecord {
         this.fineIncurred=fineIncurred;
     }
 
-    public String getReturnStatus() {
+    public boolean getReturnStatus() {
         return returnStatus;
     }
 
-    public void setReturnStatus(String returnStatus) {
+    public void setReturnStatus(boolean returnStatus) {
         this.returnStatus=returnStatus;
     }
 
