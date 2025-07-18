@@ -18,8 +18,8 @@ public class LibrarianDAO {
         try (Connection conn=DBConnection.getConnection();
              PreparedStatement stmt=conn.prepareStatement(sql)) {
 
-            stmt.setString(1, username);
-            stmt.setString(2, password);
+            stmt.setString(1,username);
+            stmt.setString(2,password);
 
             try (ResultSet rs=stmt.executeQuery()) {
                 if (rs.next()) {
@@ -43,10 +43,9 @@ public class LibrarianDAO {
         try (Connection conn=DBConnection.getConnection();
              PreparedStatement stmt=conn.prepareStatement(sql)) {
 
-            stmt.setString(1, librarian.getName());
-            stmt.setString(2, librarian.getUsername());
-            stmt.setString(3, librarian.getPassword());
-
+            stmt.setString(1,librarian.getName());
+            stmt.setString(2,librarian.getUsername());
+            stmt.setString(3,librarian.getPassword());
             int rows=stmt.executeUpdate();
             return rows>0;
         } catch (SQLException e) {
