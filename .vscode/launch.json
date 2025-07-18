@@ -29,6 +29,13 @@
             "name": "TestConnection",
             "request": "launch",
             "mainClass": "util.TestConnection",
+            "projectName": "Library_Management_System_dde31971"
+        },
+        {
+            "type": "java",
+            "name": "TestConnection",
+            "request": "launch",
+            "mainClass": "util.TestConnection",
             "projectName": "Library_Management_System_8c7e210e"
         },
         {
