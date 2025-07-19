@@ -11,21 +11,21 @@ public class BorrowRecord {
     private LocalDate returnDate;
     private boolean renewed;
     private double fineIncurred;
-    private boolean returnStatus; 
+    private boolean returnStatus;
 
     public BorrowRecord() {}
 
     public BorrowRecord(int recordId, int userId, int bookId, LocalDate borrowDate, LocalDate dueDate,
                         LocalDate returnDate, boolean renewed, double fineIncurred) {
-        this.recordId = recordId;
-        this.userId = userId;
-        this.bookId = bookId;
-        this.borrowDate = borrowDate;
-        this.dueDate = dueDate;
-        this.returnDate = returnDate;
-        this.renewed = renewed;
-        this.fineIncurred = fineIncurred;
-        this.returnStatus = (returnDate == null) ? "Not Returned" : "Returned"; 
+        this.recordId=recordId;
+        this.userId=userId;
+        this.bookId=bookId;
+        this.borrowDate=borrowDate;
+        this.dueDate=dueDate;
+        this.returnDate=returnDate;
+        this.renewed=renewed;
+        this.fineIncurred=fineIncurred;
+        this.returnStatus=(returnDate!=null); 
     }
 
     // Getters & Setters
@@ -34,7 +34,7 @@ public class BorrowRecord {
     }
 
     public void setRecordId(int recordId) {
-        this.recordId = recordId;
+        this.recordId =recordId;
     }
 
     public int getUserId() {
@@ -42,7 +42,7 @@ public class BorrowRecord {
     }
 
     public void setUserId(int userId) {
-        this.userId = userId;
+        this.userId=userId;
     }
 
     public int getBookId() {
@@ -50,7 +50,7 @@ public class BorrowRecord {
     }
 
     public void setBookId(int bookId) {
-        this.bookId = bookId;
+        this.bookId=bookId;
     }
 
     public LocalDate getBorrowDate() {
@@ -58,7 +58,7 @@ public class BorrowRecord {
     }
 
     public void setBorrowDate(LocalDate borrowDate) {
-        this.borrowDate = borrowDate;
+        this.borrowDate=borrowDate;
     }
 
     public LocalDate getDueDate() {
@@ -74,8 +74,8 @@ public class BorrowRecord {
     }
 
     public void setReturnDate(LocalDate returnDate) {
-        this.returnDate = returnDate;
-        this.returnStatus=(returnDate == null) ? "Not Returned" : "Returned"; 
+        this.returnDate=returnDate;
+        this.returnStatus=(returnDate != null);
     }
 
     public boolean isRenewed() {
@@ -83,7 +83,7 @@ public class BorrowRecord {
     }
 
     public void setRenewed(boolean renewed) {
-        this.renewed = renewed;
+        this.renewed=renewed;
     }
 
     public double getFineIncurred() {
@@ -103,7 +103,7 @@ public class BorrowRecord {
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return "Borrow Record Details:\n" +
                "Record ID       : " + recordId + "\n" +
                "User ID         : " + userId + "\n" +
@@ -111,7 +111,7 @@ public class BorrowRecord {
                "Borrow Date     : " + borrowDate + "\n" +
                "Due Date        : " + dueDate + "\n" +
                "Return Date     : " + returnDate + "\n" +
-               "Return Status   : " + returnStatus + "\n" +
+               "Return Status   : " + (returnStatus ? "Returned" : "Not Returned") + "\n" +
                "Renewed         : " + renewed + "\n" +
                "Fine Incurred   : ₹" + fineIncurred;
     }
