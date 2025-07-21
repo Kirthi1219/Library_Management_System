@@ -26,6 +26,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.Main",
+            "projectName": "Library_Management_System_8c7e210e"
+        },
+        {
+            "type": "java",
             "name": "TestConnection",
             "request": "launch",
             "mainClass": "util.TestConnection",

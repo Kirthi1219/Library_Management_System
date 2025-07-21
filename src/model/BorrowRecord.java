@@ -112,7 +112,7 @@ public class BorrowRecord {
                "Due Date        : " + dueDate + "\n" +
                "Return Date     : " + returnDate + "\n" +
                "Return Status   : " + (returnStatus ? "Returned" : "Not Returned") + "\n" +
-               "Renewed         : " + renewed + "\n" +
-               "Fine Incurred   : ₹" + fineIncurred;
+               "Renewed         : " + (renewed ? "Renewed" : "Not Renewed") + "\n" +
+               "Fine Incurred   : Rs. " + fineIncurred;
     }
 }

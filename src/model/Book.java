@@ -70,6 +70,10 @@ public class Book{
         this.copiesAvailable=copiesAvailable;
     }
 
+    public boolean isAvailable() {
+    return "available".equalsIgnoreCase(this.status) && this.copiesAvailable > 0;
+    }
+
    @Override
     public String toString(){
         return "Book Details:\n" +
